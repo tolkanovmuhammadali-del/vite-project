@@ -3,15 +3,15 @@ import { Routes, Route, Link, useNavigate, Navigate } from 'react-router-dom'; /
 
 // ============ ТОВАРЫ ============
 const products = [
-  { id: 1, name: "Классическая рубашка", price: 2990, category: "men", image: "https://i0.wp.com/proftextile.uz/wp-content/uploads/2024/01/rubashka1.jpg?fit=700%2C700&ssl=1", sizes: ["S","M","L","XL"], description: "Элегантная классическая рубашка из 100% хлопка." },
-  { id: 2, name: "Джинсы Slim Fit", price: 3990, category: "men", image: "https://static.insales-cdn.com/images/products/1/1714/892274354/M00387.jpg", sizes: ["S","M","L","XL"], description: "Узкие джинсы высокого качества." },
-  { id: 3, name: "Спортивная куртка", price: 4990, category: "men", image: "https://image.made-in-china.com/202f0j00AChcFGWwedbv/Fashionable-Waterproof-Winter-Rain-Jacket-Hiking-Snowboarding-Ski-Jacket-Wholesale.webp", sizes: ["M","L","XL"], description: "Утепленная спортивная куртка." },
-  { id: 4, name: "Летнее платье", price: 3490, category: "women", image: "https://e-ledi.ru/image/cache/catalog/001/479-1-1100x1100.jpg ", sizes: ["XS","S","M","L"], description: "Легкое летнее платье." },
-  { id: 5, name: "Шелковая блузка", price: 4290, category: "women", image: "https://static2.issaplus.com/wa-data/public/shop/products/60/47/124760/images/246587/246587.600x900.jpg", sizes: ["S","M","L"], description: "Изысканная шелковая блуза." },
-  { id: 6, name: "Юбка миди", price: 2790, category: "women", image: "https://conteshop.by/ru/media/catalog/product/cache/11/image/1405x1879/602f0fa2c1f0d1ba5e241f914e856ff9/a/2/a2a1362cf2f27b3553748b4fa0741f30_2.jpg?v=11", sizes: ["XS","S","M","L","XL"], description: "Элегантная юбка миди." },
-  { id: 7, name: "Детская футболка", price: 1490, category: "kids", image: "https://static.markformelle.uz/site/master/catalog/621527/desktop/listing/8218186.webp", sizes: ["2-3","4-5","6-7","8-9"], description: "Мягкая хлопковая футболка." },
-  { id: 8, name: "Детские шорты", price: 1890, category: "kids", image: "https://basket-12.wbbasket.ru/vol1730/part173064/173064588/images/big/1.webp", sizes: ["2-3","4-5","6-7","8-9"], description: "Удобные шорты." },
-  { id: 9, name: "Платье для девочки", price: 2290, category: "kids", image: "https://content2.flowwow-images.com/data/flowers/1000x1000/68/1706622322_41950868.jpg", sizes: ["2-3","4-5","6-7","8-9"], description: "Нарядное платье." }
+  { id: 1, name: "Классическая рубашка", price: 299000, category: "men", image: "https://i0.wp.com/proftextile.uz/wp-content/uploads/2024/01/rubashka1.jpg?fit=700%2C700&ssl=1", sizes: ["S","M","L","XL"], description: "Элегантная классическая рубашка из 100% хлопка." },
+  { id: 2, name: "Джинсы Slim Fit", price: 299000, category: "men", image: "https://static.insales-cdn.com/images/products/1/1714/892274354/M00387.jpg", sizes: ["S","M","L","XL"], description: "Узкие джинсы высокого качества." },
+  { id: 3, name: "Спортивная куртка", price: 399000, category: "men", image: "https://image.made-in-china.com/202f0j00AChcFGWwedbv/Fashionable-Waterproof-Winter-Rain-Jacket-Hiking-Snowboarding-Ski-Jacket-Wholesale.webp", sizes: ["M","L","XL"], description: "Утепленная спортивная куртка." },
+  { id: 4, name: "Летнее платье", price: 399000, category: "women", image: "https://e-ledi.ru/image/cache/catalog/001/479-1-1100x1100.jpg ", sizes: ["XS","S","M","L"], description: "Легкое летнее платье." },
+  { id: 5, name: "Шелковая блузка", price: 299000, category: "women", image: "https://static2.issaplus.com/wa-data/public/shop/products/60/47/124760/images/246587/246587.600x900.jpg", sizes: ["S","M","L"], description: "Изысканная шелковая блуза." },
+  { id: 6, name: "Юбка миди", price: 499000, category: "women", image: "https://conteshop.by/ru/media/catalog/product/cache/11/image/1405x1879/602f0fa2c1f0d1ba5e241f914e856ff9/a/2/a2a1362cf2f27b3553748b4fa0741f30_2.jpg?v=11", sizes: ["XS","S","M","L","XL"], description: "Элегантная юбка миди." },
+  { id: 7, name: "Детская футболка", price: 399000, category: "kids", image: "https://static.markformelle.uz/site/master/catalog/621527/desktop/listing/8218186.webp", sizes: ["2-3","4-5","6-7","8-9"], description: "Мягкая хлопковая футболка." },
+  { id: 8, name: "Детские шорты", price: 299000, category: "kids", image: "https://basket-12.wbbasket.ru/vol1730/part173064/173064588/images/big/1.webp", sizes: ["2-3","4-5","6-7","8-9"], description: "Удобные шорты." },
+  { id: 9, name: "Платье для девочки", price: 299000, category: "kids", image: "https://content2.flowwow-images.com/data/flowers/1000x1000/68/1706622322_41950868.jpg", sizes: ["2-3","4-5","6-7","8-9"], description: "Нарядное платье." }
 ];
 
 // ============ КОНТЕКСТ ТЕМЫ ============
@@ -167,7 +167,7 @@ const ProductCard = ({ product, onQuickView }) => {
       <div className="product-info">
         <div className="product-category">{product.category === 'men' ? 'МУЖСКАЯ' : product.category === 'women' ? 'ЖЕНСКАЯ' : 'ДЕТСКАЯ'}</div>
         <h3>{product.name}</h3>
-        <div className="product-price">{product.price.toLocaleString()} ₽</div>
+        <div className="product-price">{product.price.toLocaleString()} сум</div>
         <div className="card-actions">
           <button className="favorite-btn" onClick={handleFavorite}>{isFavorite(product.id) ? '❤️' : '🤍'}</button>
           <button className="detail-btn" onClick={(e) => { e.stopPropagation(); onQuickView(product); }}>Подробнее →</button>
